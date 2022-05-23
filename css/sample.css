@@ -1,0 +1,110 @@
+/* *{
+  margin: 0;
+  padding: 0;
+}
+body, html{
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serifs;
+}
+header{
+  width: 100%;
+  height:66px;
+}
+header .wrap{
+  background: rgba(51, 51, 51, 0.295);
+}
+header .wrap .logo img{
+  width: 40%;
+  height: auto;
+}
+header .wrap .WrapMenu{
+  display: flex;
+  justify-content:space-around;
+  height: 44px;
+}
+header .wrap .WrapMenu nav ul{
+  width: 100%;
+}
+header .wrap .WrapMenu nav ul li{
+  float: left;
+  list-style: none;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+
+
+}
+header .wrap .WrapMenu nav ul li a{
+  font-size: 19px;
+  text-decoration: none;
+  color: #333;
+  
+} */
+main .wrap{
+  width: 1000px;
+  height: 1000px;
+  border: 4px #111111 solid;
+  border-radius: 100%;
+  position: absolute;
+}
+.container{
+  background: red;
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+  position: absolute;
+  right: 100px;
+  top: 100px;
+
+}
+.container .box{
+  background: #111111;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  top: 20px;
+  left: 10px;
+  border-radius: 100%;
+
+}
+.container .box .box1{
+  background: #eee;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  top: 80px;
+  left: 10px;
+  border-radius: 100%;
+
+}
+.container1{
+  background: red;
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+  position: absolute;
+  top:100px;
+  left: 100px;
+}
+
+.container1 .box{
+  background: #111111;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  top: 20px;
+  left: 90px;
+  border-radius: 100%;
+}
+.container1 .box .box1{
+  background: #eee;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  top: 80px;
+  left: 90px;
+  border-radius: 100%;
+}
+
+
+
+

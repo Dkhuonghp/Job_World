@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background:#710c19;
+    box-sizing: border-box;
+}
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    transform-style: preserve-3d;
+    perspective: 500px;
+}
+section h2{
+    color:#fff;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    line-height: 100vh;
+    font-size:10vw ;
+    font-weight: 700;
+}
+.banner{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+}
+.banner .block{
+    position: relative;
+    display: block;
+    width: 5vw;
+    height: 5vh;
+    background: #fff;
+    animation: animate 2s ease-in-out forwards;
+    /* animation-delay:1s; */
+}
+/* .banner .block:nth-child(even){
+    animation:animate 1s ease-in-out forwards ;
+}
+.banner .block:nth-child(7n+3){
+    animation:animate 2.5s ease-in-out forwards ;
+}
+.banner .block:nth-child(7n+7){
+    animation:animate 1.5s ease-in-out forwards ;
+} */
+@keyframes animate{
+    0%{
+        /* opacity: 0; */
+        transform:translateZ(1000px);
+        background-image: url(../img/osaka.jpg);
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+
+    }
+    /* 50%{
+        opacity: 1;
+        background-image: url(../img/osaka.jpg);
+        background-position: center;
+        background-attachment: fixed;
+
+    } */
+    100%{
+        /* opacity: 1; */
+        transform:translateZ(0px);
+        background-image: url(../img/osaka.jpg);
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+        border: 1px solid rgba(0,0,0,.1);
+        box-shadow: 0 5px 15px rgba(0,0,0,0);
+        /* background-image: url(../img/osaka.jpg);
+        background-position: center;
+        background-attachment: fixed; */
+
+    }
+}
+/* @keyframes animate{
+    0%{
+        transform: translateZ(2000px);
+    }
+    100%{
+        transform: translateZ(0px);
+    }
+} */
